@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(calculadora));
             pictureBox1 = new PictureBox();
             pgbCarregamento = new ProgressBar();
             label1 = new Label();
+            tmrTempo = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -54,6 +56,7 @@
             pgbCarregamento.Name = "pgbCarregamento";
             pgbCarregamento.Size = new Size(485, 23);
             pgbCarregamento.TabIndex = 1;
+            pgbCarregamento.Click += pgbCarregamento_Click;
             // 
             // label1
             // 
@@ -64,6 +67,12 @@
             label1.Size = new Size(145, 24);
             label1.TabIndex = 2;
             label1.Text = "carregando...";
+            // 
+            // tmrTempo
+            // 
+            tmrTempo.Enabled = true;
+            tmrTempo.Interval = 60;
+            tmrTempo.Tick += tmrTempo_Tick;
             // 
             // calculadora
             // 
@@ -79,6 +88,7 @@
             Name = "calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "calculadora";
+            Load += calculadora_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -89,5 +99,6 @@
         private PictureBox pictureBox1;
         private ProgressBar pgbCarregamento;
         private Label label1;
+        private System.Windows.Forms.Timer tmrTempo;
     }
 }
