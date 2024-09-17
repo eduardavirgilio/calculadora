@@ -42,7 +42,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-29, -15);
+            pictureBox1.Location = new Point(-27, -13);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(197, 141);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
