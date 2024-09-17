@@ -1,8 +1,8 @@
 namespace calculadora
 {
-    public partial class Form1 : Form
+    public partial class calculadora : Form
     {
-        public Form1()
+        public calculadora()
         {
             InitializeComponent();
         }

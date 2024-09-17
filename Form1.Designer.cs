@@ -1,6 +1,6 @@
 ﻿namespace calculadora
 {
-    partial class Form1
+    partial class calculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(calculadora));
+            pictureBox1 = new PictureBox();
+            pgbCarregamento = new ProgressBar();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-29, -15);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(197, 141);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // pgbCarregamento
+            // 
+            pgbCarregamento.ForeColor = Color.DarkSlateBlue;
+            pgbCarregamento.Location = new Point(33, 114);
+            pgbCarregamento.Name = "pgbCarregamento";
+            pgbCarregamento.Size = new Size(485, 23);
+            pgbCarregamento.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Lucida Sans", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(372, 84);
+            label1.Name = "label1";
+            label1.Size = new Size(145, 24);
+            label1.TabIndex = 2;
+            label1.Text = "carregando...";
+            // 
+            // calculadora
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.GhostWhite;
+            ClientSize = new Size(549, 156);
+            Controls.Add(label1);
+            Controls.Add(pgbCarregamento);
+            Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "calculadora";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "calculadora";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
+        private ProgressBar pgbCarregamento;
+        private Label label1;
     }
 }
