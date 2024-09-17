@@ -74,8 +74,10 @@
             Controls.Add(label1);
             Controls.Add(pgbCarregamento);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "calculadora";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "calculadora";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
