@@ -233,6 +233,7 @@
             btnCalcular.TabIndex = 16;
             btnCalcular.Text = "=";
             btnCalcular.UseVisualStyleBackColor = false;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // pictureBox1
             // 

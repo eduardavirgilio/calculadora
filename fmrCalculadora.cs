@@ -21,5 +21,10 @@ namespace calculadora
         {
 
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
