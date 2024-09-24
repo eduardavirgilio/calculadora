@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmrCalculadora));
-            textBox1 = new TextBox();
+            txtAparecer = new TextBox();
             btnSomar = new Button();
             btnSubtrair = new Button();
             btnMultiplicar = new Button();
@@ -50,13 +50,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // txtAparecer
             // 
-            textBox1.Location = new Point(12, 25);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(285, 61);
-            textBox1.TabIndex = 0;
+            txtAparecer.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtAparecer.Location = new Point(12, 25);
+            txtAparecer.Multiline = true;
+            txtAparecer.Name = "txtAparecer";
+            txtAparecer.Size = new Size(285, 61);
+            txtAparecer.TabIndex = 0;
             // 
             // btnSomar
             // 
@@ -68,6 +69,7 @@
             btnSomar.TabIndex = 1;
             btnSomar.Text = "+";
             btnSomar.UseVisualStyleBackColor = false;
+            btnSomar.Click += btnSomar_Click;
             // 
             // btnSubtrair
             // 
@@ -79,6 +81,7 @@
             btnSubtrair.TabIndex = 2;
             btnSubtrair.Text = "-";
             btnSubtrair.UseVisualStyleBackColor = false;
+            btnSubtrair.Click += btnSubtrair_Click;
             // 
             // btnMultiplicar
             // 
@@ -90,6 +93,7 @@
             btnMultiplicar.TabIndex = 3;
             btnMultiplicar.Text = "*";
             btnMultiplicar.UseVisualStyleBackColor = false;
+            btnMultiplicar.Click += btnMultiplicar_Click;
             // 
             // btnDividir
             // 
@@ -101,6 +105,7 @@
             btnDividir.TabIndex = 4;
             btnDividir.Text = "/";
             btnDividir.UseVisualStyleBackColor = false;
+            btnDividir.Click += btnDividir_Click;
             // 
             // btn01
             // 
@@ -112,6 +117,7 @@
             btn01.TabIndex = 5;
             btn01.Text = "1";
             btn01.UseVisualStyleBackColor = false;
+            btn01.Click += btn01_Click;
             // 
             // btn02
             // 
@@ -123,6 +129,7 @@
             btn02.TabIndex = 6;
             btn02.Text = "2";
             btn02.UseVisualStyleBackColor = false;
+            btn02.Click += btn02_Click;
             // 
             // btn03
             // 
@@ -134,6 +141,7 @@
             btn03.TabIndex = 7;
             btn03.Text = "3";
             btn03.UseVisualStyleBackColor = false;
+            btn03.Click += btn03_Click;
             // 
             // btnLimpar
             // 
@@ -145,6 +153,7 @@
             btnLimpar.TabIndex = 8;
             btnLimpar.Text = "CLS";
             btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
             // 
             // btn04
             // 
@@ -156,6 +165,7 @@
             btn04.TabIndex = 9;
             btn04.Text = "4";
             btn04.UseVisualStyleBackColor = false;
+            btn04.Click += btn04_Click;
             // 
             // btn05
             // 
@@ -167,6 +177,7 @@
             btn05.TabIndex = 10;
             btn05.Text = "5";
             btn05.UseVisualStyleBackColor = false;
+            btn05.Click += btn05_Click;
             // 
             // btn06
             // 
@@ -178,6 +189,7 @@
             btn06.TabIndex = 11;
             btn06.Text = "6";
             btn06.UseVisualStyleBackColor = false;
+            btn06.Click += btn06_Click;
             // 
             // btn07
             // 
@@ -189,6 +201,7 @@
             btn07.TabIndex = 12;
             btn07.Text = "7";
             btn07.UseVisualStyleBackColor = false;
+            btn07.Click += btn07_Click;
             // 
             // btn08
             // 
@@ -200,6 +213,7 @@
             btn08.TabIndex = 13;
             btn08.Text = "8";
             btn08.UseVisualStyleBackColor = false;
+            btn08.Click += btn08_Click;
             // 
             // btn09
             // 
@@ -211,6 +225,7 @@
             btn09.TabIndex = 14;
             btn09.Text = "9";
             btn09.UseVisualStyleBackColor = false;
+            btn09.Click += btn09_Click;
             // 
             // btn0
             // 
@@ -222,6 +237,7 @@
             btn0.TabIndex = 15;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = false;
+            btn0.Click += btn0_Click;
             // 
             // btnCalcular
             // 
@@ -269,7 +285,7 @@
             Controls.Add(btnMultiplicar);
             Controls.Add(btnSubtrair);
             Controls.Add(btnSomar);
-            Controls.Add(textBox1);
+            Controls.Add(txtAparecer);
             Name = "fmrCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "fmrCalculadora";
@@ -281,7 +297,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtAparecer;
         private Button button1;
         private Button button2;
         private Button button3;
