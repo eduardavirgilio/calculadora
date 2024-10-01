@@ -24,7 +24,7 @@ namespace calculadora
 
                 this.Hide();
 
-                new fmrCalculadora().ShowDialog();
+                new frmCalculadora().ShowDialog();
 
             }
         }

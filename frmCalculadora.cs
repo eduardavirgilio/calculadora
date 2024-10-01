@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace calculadora
 {
-    public partial class fmrCalculadora : Form
+    public partial class frmCalculadora : Form
     {
         float numero1 = 0;
         string operacao = "";
 
-        public fmrCalculadora()
+        public frmCalculadora()
         {
             InitializeComponent();
         }
@@ -140,13 +140,18 @@ namespace calculadora
 
         private void celsiusParaFahrenheitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fmrConversor formularioConversor = new fmrConversor();
+            frmConversor formularioConversor = new frmConversor();
             formularioConversor.ShowDialog();
         }
 
         private void fmrCalculadora_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
