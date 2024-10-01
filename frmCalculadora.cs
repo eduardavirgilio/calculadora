@@ -153,5 +153,11 @@ namespace calculadora
         {
             this.Close();
         }
+
+        private void centimetrosParaPolegadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCmparaPolegadas formulariocmparapolegadas = new frmCmparaPolegadas();
+            formulariocmparapolegadas.ShowDialog();
+        }
     }
 }

@@ -51,10 +51,10 @@
             menuStrip1 = new MenuStrip();
             conversorToolStripMenuItem = new ToolStripMenuItem();
             celsiusParaFahrenheitToolStripMenuItem = new ToolStripMenuItem();
+            centimetrosParaPolegadasToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             fecharToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            centimetrosParaPolegadasToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -313,6 +313,13 @@
             celsiusParaFahrenheitToolStripMenuItem.Text = "Celsius para Fahrenheit";
             celsiusParaFahrenheitToolStripMenuItem.Click += celsiusParaFahrenheitToolStripMenuItem_Click;
             // 
+            // centimetrosParaPolegadasToolStripMenuItem
+            // 
+            centimetrosParaPolegadasToolStripMenuItem.Name = "centimetrosParaPolegadasToolStripMenuItem";
+            centimetrosParaPolegadasToolStripMenuItem.Size = new Size(278, 26);
+            centimetrosParaPolegadasToolStripMenuItem.Text = "Centimetros para Polegadas";
+            centimetrosParaPolegadasToolStripMenuItem.Click += centimetrosParaPolegadasToolStripMenuItem_Click;
+            // 
             // sairToolStripMenuItem
             // 
             sairToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fecharToolStripMenuItem });
@@ -332,12 +339,6 @@
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // centimetrosParaPolegadasToolStripMenuItem
-            // 
-            centimetrosParaPolegadasToolStripMenuItem.Name = "centimetrosParaPolegadasToolStripMenuItem";
-            centimetrosParaPolegadasToolStripMenuItem.Size = new Size(278, 26);
-            centimetrosParaPolegadasToolStripMenuItem.Text = "Centimetros para Polegadas";
             // 
             // frmCalculadora
             // 
