@@ -22,7 +22,7 @@ namespace calculadora
 
         private void fmrCalculadora_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -136,6 +136,17 @@ namespace calculadora
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtAparecer.Text = "";
+        }
+
+        private void celsiusParaFahrenheitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmrConversor formularioConversor = new fmrConversor();
+            formularioConversor.ShowDialog();
+        }
+
+        private void fmrCalculadora_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -14,19 +14,17 @@ namespace calculadora
 
         private void tmrTempo_Tick(object sender, EventArgs e)
         {
+              
             pgbCarregamento.Value = pgbCarregamento.Value + 1;
-
+            
 
             if (pgbCarregamento.Value == 100)
             {
                 tmrTempo.Enabled = false;
 
-                
                 this.Hide();
 
-                fmrCalculadora formularioCalc = new fmrCalculadora();
-                formularioCalc.ShowDialog();
-
+                new fmrCalculadora().ShowDialog();
 
             }
         }

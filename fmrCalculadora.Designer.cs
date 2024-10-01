@@ -308,6 +308,7 @@
             celsiusParaFahrenheitToolStripMenuItem.Name = "celsiusParaFahrenheitToolStripMenuItem";
             celsiusParaFahrenheitToolStripMenuItem.Size = new Size(243, 26);
             celsiusParaFahrenheitToolStripMenuItem.Text = "Celsius para Fahrenheit";
+            celsiusParaFahrenheitToolStripMenuItem.Click += celsiusParaFahrenheitToolStripMenuItem_Click;
             // 
             // contextMenuStrip1
             // 
@@ -345,6 +346,7 @@
             Name = "fmrCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "fmrCalculadora";
+            FormClosed += fmrCalculadora_FormClosed;
             Load += fmrCalculadora_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             menuStrip1.ResumeLayout(false);
