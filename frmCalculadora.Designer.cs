@@ -1,6 +1,6 @@
 ﻿namespace calculadora
 {
-    partial class fmrCalculadora
+    partial class frmCalculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmrCalculadora));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadora));
             txtAparecer = new TextBox();
             btnSomar = new Button();
             btnSubtrair = new Button();
@@ -52,6 +52,8 @@
             conversorToolStripMenuItem = new ToolStripMenuItem();
             celsiusParaFahrenheitToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip1 = new ContextMenuStrip(components);
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            fecharToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -289,7 +291,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { conversorToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { conversorToolStripMenuItem, sairToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(393, 28);
@@ -308,12 +310,27 @@
             celsiusParaFahrenheitToolStripMenuItem.Name = "celsiusParaFahrenheitToolStripMenuItem";
             celsiusParaFahrenheitToolStripMenuItem.Size = new Size(243, 26);
             celsiusParaFahrenheitToolStripMenuItem.Text = "Celsius para Fahrenheit";
+            celsiusParaFahrenheitToolStripMenuItem.Click += celsiusParaFahrenheitToolStripMenuItem_Click;
             // 
             // contextMenuStrip1
             // 
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fecharToolStripMenuItem });
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(48, 24);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
+            // fecharToolStripMenuItem
+            // 
+            fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            fecharToolStripMenuItem.Size = new Size(224, 26);
+            fecharToolStripMenuItem.Text = "fechar";
             // 
             // fmrCalculadora
             // 
@@ -345,6 +362,7 @@
             Name = "fmrCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "fmrCalculadora";
+            FormClosed += fmrCalculadora_FormClosed;
             Load += fmrCalculadora_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             menuStrip1.ResumeLayout(false);
@@ -393,5 +411,7 @@
         private ToolStripMenuItem conversorToolStripMenuItem;
         private ToolStripMenuItem celsiusParaFahrenheitToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem fecharToolStripMenuItem;
     }
 }

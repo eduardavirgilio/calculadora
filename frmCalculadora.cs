@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace calculadora
 {
-    public partial class fmrCalculadora : Form
+    public partial class frmCalculadora : Form
     {
         float numero1 = 0;
         string operacao = "";
 
-        public fmrCalculadora()
+        public frmCalculadora()
         {
             InitializeComponent();
         }
 
         private void fmrCalculadora_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -136,6 +136,22 @@ namespace calculadora
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtAparecer.Text = "";
+        }
+
+        private void celsiusParaFahrenheitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConversor formularioConversor = new frmConversor();
+            formularioConversor.ShowDialog();
+        }
+
+        private void fmrCalculadora_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
